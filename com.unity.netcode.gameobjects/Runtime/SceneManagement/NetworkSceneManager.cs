@@ -394,7 +394,7 @@ namespace Unity.Netcode
         /// <summary>
         /// The SceneManagerHandler implementation
         /// </summary>
-        internal ISceneManagerHandler SceneManagerHandler = new DefaultSceneManagerHandler();
+        public ISceneManagerHandler SceneManagerHandler { get; set; } = new DefaultSceneManagerHandler();
 
         internal readonly Dictionary<Guid, SceneEventProgress> SceneEventProgressTracking = new Dictionary<Guid, SceneEventProgress>();
 
